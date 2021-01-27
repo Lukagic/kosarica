@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Alegreya", serif;
+  background: #b5b6b8;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 16px;
+}
+
+.header-shoppingcart {
+  position: relative;
+  float: right;
+}
+
+.shoppingcart-wrapper {
+  background: rgb(255, 254, 254);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  display: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  margin: 16px 0 0;
+  padding: 0;
+  /* height: 100vh; */
+}
+
+.shoppingcart-wrapper.show {
+  display: block;
+}
+.shoppingcart-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 8px 16px;
+  background: rgb(143, 90, 38);
+  color: white;
+}
+
+.shoppingcart-items {
+  padding: 16px;
+  overflow: hidden;
+  max-height: 385px;
+}
+
+.shoppingcart-items li {
+  border-bottom: 1px solid gray;
+  display: none;
+}
+
+.shoppingcart-items li:last-child {
+  margin-bottom: 39px;
+}
+
+.shoppingcart-items li:after {
+  display: block;
+  content: "";
+  clear: both;
+  width: 100%;
+}
+
+.shoppingcart-items li .image {
+  float: left;
+  width: 100px;
+  margin-right: 16px;
+}
+
+.shoppingcart-dugmad {
+  display: block;
+  padding: 8px 16px;
+}
+
+.shoppingcart-dugmad:after {
+  display: block;
+  content: "";
+  clear: both;
+  width: 100%;
+}
+
+.shoppingcart-dugmad a {
+  display: block;
+  width: calc(50% - 8px);
+  float: left;
+  padding: 8px 16px;
+  text-align: center;
+  border: 1px solid black;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.shoppingcart-dugmad a.edit-cart-button {
+  color: rgb(0, 0, 0);
+}
+
+.shoppingcart-dugmad a.edit-cart-button:hover {
+  color: rgb(5, 5, 5);
+  background: #dcedff;
+}
+
+.shoppingcart-dugmad a.checkout-cart-button {
+  float: right;
+  background: rgb(143, 90, 38);
+  color: white;
+}
+
+.shoppingcart-dugmad a.checkout-cart-button:hover {
+  color: rgb(0, 0, 0);
+  background: #dcedff;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+img {
+  margin: 12px 0 12px 0;
+  float: left;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.description {
+  float: left;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.grayp {
+  font-size: 70%;
+  color: rgb(158, 158, 158);
+  font-weight: bold;
+}
+
+.drop-btn {
+  background-color: #b5b6b8;
+  color: rgb(143, 90, 38);
+  border: none;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.drop-btn:hover {
+  background-color: #b5b6b8;
+  color: #dcedff;
+  border: none;
+}
+
+#next {
+  float: right;
+  border: 1px solid #333;
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  background: #dedfe0;
+  text-align: center;
+  color: rgb(143, 90, 38);
+}
+
+#prev {
+  float: top;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  background: #dedfe0;
+  color: rgb(143, 90, 38);
+}
+
+#next:hover {
+  float: right;
+  border: 1px solid #333;
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #dcedff;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+#prev:hover {
+  float: top;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #dcedff;
+  transition: background-color 0.2s;
+}
+
+.clearfix {
+  clear: both;
+}
+
+ul {
+  overflow: hidden;
+}
+
+.sliders {
+  padding: 16px;
+}
